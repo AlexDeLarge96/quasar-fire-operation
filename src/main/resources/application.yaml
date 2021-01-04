@@ -1,0 +1,26 @@
+spring:
+  mvc:
+    # Preferred JSON mapper to use for HTTP message conversion.
+    converters.preferred-json-mapper: gson
+    ##Disable default error handler
+    throw-exception-if-no-handler-found: true
+  web.resources.add-mappings: false
+quasar:
+  satellites:
+    -
+      name: "kenobi"
+      position:
+        x: -500
+        y: -200
+    -
+      name: "skywalker"
+      position:
+        x: 100
+        y: -100
+    -
+      name: "sato"
+      position:
+        x: 500
+        y: 100
+server:
+  port: ${PORT:8080}
